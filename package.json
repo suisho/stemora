@@ -1,0 +1,15 @@
+{
+  "name": "kanamora",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": ["japanese", "kana", "mora"],
+  "author": "suisho",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^2.2.1"
+  }
+}
