@@ -1,7 +1,7 @@
 {
-  "name": "kanamora",
-  "version": "1.0.0",
-  "description": "",
+  "name": "stemora",
+  "version": "0.0.1",
+  "description": "Japanese kana normalize (Stegana and same mora kana)",
   "main": "index.js",
   "scripts": {
     "test": "mocha"

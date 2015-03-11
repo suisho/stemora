@@ -1,6 +1,10 @@
-var kanamora = require("./index")
+var stemora = require("./index")
+var assert = require("assert")
 describe("normalize", function(){
   it("basic", function(){
-    kanamora.normalize("フォンダンショコラをたべるよゐこ", "フオンダンシヨコラおたべるよいこ")
+    assert.equal(
+      stemora.normalize("フォンダンショコラをたべるよゐこ"),
+     "フオンダンシヨコラおたべるよいこ"
+    )
   })
 })

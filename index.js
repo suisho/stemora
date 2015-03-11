@@ -2,9 +2,10 @@ var sameMoraGroup = [
   ["い", "ゐ"],
   ["え", "ゑ"],
   ["お", "を"],
-  ["オ", "ヲ"],
+  ["オ", "ヲ"]
 ]
 
+// TODO: more simply
 var suteganaGroup = [
   ["あ", "ぁ"],
   ["い", "ぃ"],
@@ -48,9 +49,9 @@ var suteganaGroup = [
 
 var kanaGroup = sameMoraGroup.concat(suteganaGroup)
 
-var kanaReg = new RegExp(kanaGroup.map(function(group){
+var kanaReg = new RegExp("[" + kanaGroup.map(function(group){
   return group[1]
-}), "g")
+}).join("") + "]", "g")
 
 // generate table
 var kanaTable = {}
